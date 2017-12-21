@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>东华理工大学校园购</title>
+    <link rel="stylesheet" href="../css/light7.min.css">
+    <link rel="stylesheet" href="../css/mylight7.css">
+    <!-- <link rel="stylesheet" href="../css/common.css"> -->
+    <!-- <link rel="stylesheet" href="../css/icon/iconfont.css"> -->
+</head>
+
+<body class='myapp'>
+    <!-- page 容器 -->   
+    <!--用户登录-->
+    <div class="page page-current" id='login_page'>
+        <header class="bar bar-nav">
+        	<a class="button button-link button-nav pull-left back"><span class="icon icon-left"></span>Back</a>        
+            <h1 class="title">登录</h1> </header>
+        <div class="content">
+            <div class="page-login">
+                <div class="list-block inset text-center">
+                    <h3>东理校园购</h3>
+                    <ul>
+                        <!-- Text inputs -->
+                        <li>
+                            <div class="item-content">
+                                <div class="item-media"><i class="icon icon-form-name" style='background-image: url(../image/phone.png);background-size: 19px 23px;background-position: 6px 1px;'></i></div>
+                                <div class="item-inner">
+                                    <div class="item-input">
+                                        <input type="text" placeholder="手机号" id='login_tel'> </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item-content">
+                                <div class="item-media"><i class="icon icon-form-email" style='background-image: url(../image/password.png);background-size: 19px 23px;background-position: 6px 1px;'></i></div>   
+                                <div class="item-inner">
+                                    <div class="item-input">
+                                        <input type="password" placeholder="密码" id='login_password'> </div>    
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="content-block">
+                    <p><a id='login' class="button button-big button-fill external" href='#' data-transition='fade'>登录</a></p>
+                    <p class='text-center signup'> <a href="#register_page" class='pull-left' style='color:#999;'>没有账号?</a> <a href="#forget_page" class='pull-right'>忘记密码?</a> </p>
+                </div>
+            </div>
+            <style>
+                .content {
+                    color: #999;   
+                }
+                
+                .button.button-fill.button-big {
+                    line-height: 2.0rem;
+                    height: 2.0rem;
+                }
+                
+                .list-block {
+                    margin: .75rem;
+                }
+                
+                .content-block {
+                    margin: .75rem 0;
+                }
+                
+                .signup a {
+                    color: #999;
+                }
+            </style>
+        </div>
+    </div>
+    <!-- 用户注册 -->
+    <div class="page" id='register_page'>      
+        <!--标题栏-->
+        <header class="bar bar-nav">
+            <a class="button button-link button-nav pull-left back"> <span class="icon icon-left"></span> Back </a>
+            <h1 class="title">用户注册</h1> </header>
+        <!--这里是页面内容区-->
+        <div class="content">
+            <div class="page-login">
+                <div class="list-block inset text-center">
+                    <h3>东理校园购</h3>     
+                    <ul>
+                        <!-- Text inputs -->
+                        <li>
+                            <div class="item-content">
+                                <div class="item-media"><i class="icon icon-form-name" style='background-image: url(../image/phone.png);background-size: 19px 23px;'></i></div>
+                                <div class="item-inner">
+                                    <div class="item-input">
+                                        <input type='tel' placeholder="手机号" id='tel' name='tel'> </div>   
+                                </div>
+                            </div>
+                        </li> 
+                        <li>
+                            <div class="item-content">
+                                <div class="item-media"><i class="icon icon-form-name" style='background-image: url(../image/user.png);background-size: 19px 23px;background-position: 6px 1px;'></i></div>
+                                <div class="item-inner">
+                                    <div class="item-input">
+                                        <input type="text" placeholder="用户名" id='username' name='username'> </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item-content">
+                                <div class="item-media"><i class="icon icon-form-email" style='background-image: url(../image/password.png);background-size: 19px 23px;background-position: 6px 1px;'></i></div>   
+                                <div class="item-inner">
+                                    <div class="item-input">
+                                        <input type="password" placeholder="密码" id='password' name='password'> </div>    
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item-content">
+                                <div class="item-media"><i class="icon icon-form-email" style='background-image: url(../image/password.png);background-size: 19px 23px;background-position: 6px 1px;'></i></div>   
+                                <div class="item-inner">
+                                    <div class="item-input">
+                                        <input type="password" placeholder="确认密码" id='repassword' name='repassword'> </div>       
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item-content">
+                                <div class="item-media"><i class="icon icon-form-email" style='background-image: url(../image/address.png);background-size: 19px 23px;background-position: 6px 1px;'></i></div>   
+                                <div class="item-inner">
+                                    <div class="item-input">
+                                        <input type="text" placeholder="寝室坐标" id='address' name='address'> </div>          
+                                </div>
+                            </div>
+                        </li> 
+                        <li>
+                            <div class="item-content">
+                                <div class="item-media"><i class="icon icon-form-email" style='background-image: url(../image/identifying.png);background-size: 19px 23px;background-position: 6px 1px;'></i></div>   
+                                <div class="item-inner">
+                                    <div class="item-input">
+                                        <input type="text" placeholder="输入验证码" id='identifying'>
+                                        <a href="#" id='getIdentifying' class="button button-fill button-success" style='margin-top:-2.5em;float:right;'>获取验证码</a>
+                                        <a href="#" id='timepass' class="button button-success" style='margin-top:-2.5em;float:right;display:none'></a>
+                                    </div>          
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="content-block">
+                    <p><a class="button button-big button-fill external" id='toRegister' href='#' data-transition='fade'>注册</a></p>    
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--忘记密码-->
+    <div class="page" id='forget_page'>      
+        <!--标题栏-->
+        <header class="bar bar-nav">
+            <a class="button button-link button-nav pull-left back"> <span class="icon icon-left"></span> Back </a>
+            <h1 class="title">修改密码</h1> </header>
+        <!--这里是页面内容区-->
+        <div class="content">
+            <div class="page-login">
+                <div class="list-block inset text-center">
+                    <h3>东理校园购</h3>     
+                    <ul>
+                        <!-- Text inputs -->
+                        <li>
+                            <div class="item-content">
+                                <div class="item-media"><i class="icon icon-form-name" style='background-image: url(../image/phone.png);background-size: 19px 23px;'></i></div>
+                                <div class="item-inner">
+                                    <div class="item-input">
+                                        <input type='tel' placeholder="手机号" id='forget_tel'> </div>   
+                                </div>
+                            </div>
+                        </li> 
+                        <li>
+                            <div class="item-content">
+                                <div class="item-media"><i class="icon icon-form-email" style='background-image: url(../image/password.png);background-size: 19px 23px;background-position: 6px 1px;'></i></div>   
+                                <div class="item-inner">
+                                    <div class="item-input">
+                                        <input type="password" placeholder="新密码" id='forget_password'> </div>    
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item-content">
+                                <div class="item-media"><i class="icon icon-form-email" style='background-image: url(../image/password.png);background-size: 19px 23px;background-position: 6px 1px;'></i></div>   
+                                <div class="item-inner">
+                                    <div class="item-input">
+                                        <input type="password" placeholder="确认新密码" id='forget_repassword'> </div>       
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item-content">
+                                <div class="item-media"><i class="icon icon-form-email" style='background-image: url(../image/identifying.png);background-size: 19px 23px;background-position: 6px 1px;'></i></div>   
+                                <div class="item-inner">
+                                    <div class="item-input">
+                                        <input type="text" placeholder="输入验证码" id='forget_identifying'>
+                                        <a href="#" id='forget_getIdentifying' class="button button-fill button-success" style='margin-top:-2.5em;float:right;'>获取验证码</a>
+                                        <a href="#" id='forget_timepass' class="button button-success" style='margin-top:-2.5em;float:right;display:none'></a>
+                                    </div>          
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="content-block">
+                    <p><a class="button button-big button-fill external" id='forget_tologin' href='#' data-transition='fade'>登录</a></p>    
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    <script type='text/javascript' src='../js/jquery-2.1.4.min.js' charset='utf-8'></script>
+    <!-- 	<script type='text/javascript' src='../js/ajaxfileupload.js'   
+		charset='utf-8'></script> -->
+    <script type='text/javascript' src='../js/light7.min.js' charset='utf-8'></script>
+    <script type='text/javascript' src='../js/address.js' charset='utf-8'></script>
+    <script type='text/javascript' src='../js/loginandregister.js' charset='utf-8'></script>
+</body>
+
+</html>

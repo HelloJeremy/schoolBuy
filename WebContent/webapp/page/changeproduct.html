@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>东华理工大学校园购</title>
+    <link rel="stylesheet" href="../css/light7.min.css">
+    <link rel="stylesheet" href="../css/mylight7.css">
+</head>
+
+<body class='myapp'>
+    <!-- page 容器 -->
+    <!--个人宝贝管理-->
+    <div class="page page-current" id="page-changeproduct">
+        <!--标题栏-->
+        <header class="bar bar-nav">
+            <a class="button button-link button-nav pull-left back"> <span class="icon icon-left"></span> Back </a>
+            <h1 class="title">宝贝更新</h1>
+            <style>
+                .priceinput {
+                    border:1px solid #b7b8b7!important;   
+                    font-size: 1.5em!important;
+                    width: 25%!important;
+                    text-align: left!important;
+                }
+            </style>
+        </header>
+        <!-- 工具栏 -->
+	    <nav class="bar bar-tab">
+	    </nav>    
+        <!--这里是页面内容区-->
+        <div class="content" style='background-color:#fff;'>
+            <div class="list-block media-list" style='margin:0rem;'>
+                  <div class="card demo-card-header-pic">
+                    <div valign="bottom" class="card-header color-white no-border no-padding">
+                      <img class='card-cover' alt="">
+                    </div>
+                    <div class="card-content">
+                      <div class="card-content-inner">
+                        <span class="icon icon-edit" style="font-size:2em;color:#0894ec;"></span>
+                        <span style='font-size:1.2em;color:#0894ec;'>可修改宝贝详情及价格</span>
+                        <p style="margin: 0 -1em;"><textarea style='border: 2px solid #b7b8b7;'></textarea></p>
+                      </div>
+                    </div>
+                    <div class="card-footer">
+                      <a href="#" class="link" style='height:100%;'>
+                          <input style="width:2.5rem;%" type="text" value='价格/' disabled>
+                          <sub style='width:1rem;color:#333;'>元</sub>
+                          <span style='margin-left: -.5rem;color: #333;'>：</span>
+                          <input class='priceinput' type='number' value='1000'/>
+                          <span class="icon icon-edit" style="font-size:2em;"></span>
+                      </a>
+                    </div>
+                  </div>   
+            </div>
+            <div class="content-block" style='margin-top:0em;'>
+                <div class="row">   
+                <p class="col-100"><a href="#" class="button button-big button-fill button-success">确认修改</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type='text/javascript' src='../js/jquery-2.1.4.min.js' charset='utf-8'></script>
+    <script type='text/javascript' src='../js/light7.min.js' charset='utf-8'></script>
+    <script type='text/javascript' src='../js/address.js' charset='utf-8'></script>   
+    <script type="text/javascript" src='../js/productchange.js' charset='utf-8'></script>
+</body>
+
+</html>

@@ -1,0 +1,14 @@
+.myapp .bar-nav {
+    background-color: #19489e;
+    border-bottom: 1px solid #19489e;
+}
+.myapp .title{
+	color: white;
+}   
+.myapp .icon-left{
+	color: white;
+    font-weight: 900;
+} 
+.myapp .pull-left{
+	color: white;
+}   

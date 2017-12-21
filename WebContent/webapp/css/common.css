@@ -1,0 +1,160 @@
+.personal {
+	width: 2em;
+	height: 2em;
+	margin-top: 0.3em;
+	border-radius: 2em;
+}
+
+.personalbig {
+	width: 6em;
+	height: 6em;
+	border-radius: 6em;
+	margin-top: 1.5em;
+	margin-left: 3.5em;
+}
+
+.nameinput {
+	text-align: center;
+	background-color: transparent;
+	border: 0em;
+	color: #FFFFFF;
+	font-size: 2em;
+	width: 6em;
+	margin-left: 0.2em;
+	margin-bottom: 0.2em;
+}
+
+#product_type {
+	width: 7.5em;
+	margin-left: 0.5em;
+	background-color: transparent;
+	border: 0em;
+}
+
+.grzxtxBackground {
+	width: 100%;
+	height: 9.5rem;;
+	background-image: url(../image/grzxbackground.png);
+}
+/*个人中心的友情向导*/
+.cd-container {
+   margin: 0 0.75rem;
+}
+.cd-container::after {
+  /* clearfix */
+  content: '';
+  display: table;
+  clear: both;
+}
+#cd-timeline {
+  position: relative;
+  padding: 1em 0;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+#cd-timeline::before {
+  /* this is the vertical line */
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 13px;
+    height: 100%;
+    width: 4px;
+    background: white;
+}
+.cd-timeline-block {
+  position: relative;
+  margin: 1.3em 0;
+}
+.cd-timeline-block:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.cd-timeline-block:first-child {
+  margin-top: 0;
+}
+.cd-timeline-block:last-child {
+  margin-bottom: 0;
+}
+.cd-timeline-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  box-shadow: 0 0 0 4px white, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
+}
+
+.cd-timeline-img.cd-picture {
+  background: #75ce66;
+}
+.cd-timeline-img.cd-movie {
+  background: #c03b44;
+}
+.cd-timeline-img.cd-location {
+  background: #f0ca45;
+}
+.cd-timeline-content {
+  position: relative;
+  margin-left: 50px;
+  background: white;
+  border-radius: 0.25em;
+  padding: 0.5em;
+  box-shadow: 0 3px 0 #E2E3E4;
+}
+.cd-timeline-content:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.cd-timeline-content::before {
+    content: '';
+    position: absolute;
+    top: 6px;
+    right: 100%;
+    height: 0;
+    width: 0;
+    border: 11px solid transparent;
+    border-right: 13px solid white;
+}
+.cd-title{
+    font-size: 0.75rem;
+    font-weight: bold;
+}
+.cd-subtitle{
+	font-size: 0.75rem;
+	color: graytext;
+}
+/*修改css占位符的颜色*/
+::-webkit-input-placeholder { /* Chrome */
+  color: #fff;
+  transition: opacity 250ms ease-in-out;
+}
+:focus::-webkit-input-placeholder {
+  opacity: 0.5;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: #fff;
+  transition: opacity 250ms ease-in-out;
+}
+:focus:-ms-input-placeholder {
+  opacity: 0.5;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: #fff;
+  opacity: 1;
+  transition: opacity 250ms ease-in-out;
+}
+:focus::-moz-placeholder {
+  opacity: 0.5;
+}
+:-moz-placeholder { /* Firefox 4 - 18 */
+  color: #fff;
+  opacity: 1;
+  transition: opacity 250ms ease-in-out;
+}
+:focus:-moz-placeholder {
+  opacity: 0.5;
+}

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+<meta name="viewport"
+	content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<title>东华理工大学校园购</title>
+<link rel="stylesheet" href="../css/light7.min.css">
+<link rel="stylesheet" href="../css/mylight7.css">
+<link rel="stylesheet" href="../css/swiper.min.css">         
+<!-- <link rel="stylesheet" href="../css/common.css"> -->  
+<!-- <link rel="stylesheet" href="../css/icon/iconfont.css"> -->
+</head>
+
+<body class='myapp'>
+    <nav class="bar bar-tab">  
+    </nav>
+	<!-- page 容器 -->   
+	<!--宝贝详情页面-->
+    <div class="page" id="page-detail">          
+	    <style>
+	            .swiper-container {
+	                height: 25em;  
+	            }
+	            .swiper-slide {
+	                background-position: center;
+	                background-size: cover;
+	            }
+	    </style>   
+		<!--标题栏-->   
+        <header class="bar bar-nav">
+            <a class="button button-link button-nav pull-left back"> <span class="icon icon-left"></span> Back </a>
+            <h1 class="title">宝贝详情</h1> </header>
+		<!--这里是页面内容区-->
+        <div class="content" style='background-color:#fff;'>
+        	 <div class="card">
+                    <div class="swiper-container">  
+                    <div  class="swiper-wrapper" id='productImage'>    
+                       <!--  <div class="swiper-slide" style="background-image:url(../image/examplegoods.jpg)"></div>
+                        <div class="swiper-slide" style="background-image:url(../image/examplegoods.jpg)"></div>
+                        <div class="swiper-slide" style="background-image:url(../image/examplegoods.jpg)"></div>
+                        <div class="swiper-slide" style="background-image:url(../image/examplegoods.jpg)"></div>
+                        <div class="swiper-slide" style="background-image:url(../image/examplegoods.jpg)"></div>     -->         
+                    </div>
+                    <div class="swiper-pagination"></div>   
+                    </div>
+              </div>      
+                     <div class="card" style='margin-top: 1em;'>
+                        <div class="card-header"><a href="#" class="link" id='productPrice'>参考价格：￥</a></div>
+                        <div class="card-content">
+                          <div class="card-content-inner" id='productDesc'></div>
+                        </div>
+                        <div class="card-footer"> 
+                            <a href="#" class="link" id='userName'>卖家：</a>
+                            <a href="#" class="link" id='userTel'>联系方式：</a>   
+                        </div>       
+                  </div>
+                </div>
+            </div>
+	<script type='text/javascript' src='../js/jquery-2.1.4.min.js'
+		charset='utf-8'></script>
+	<!-- <script type='text/javascript' src='../js/ajaxfileupload.js'   
+		charset='utf-8'></script> -->   
+	<script type='text/javascript' src='../js/light7.min.js'
+		charset='utf-8'></script>
+	<script type='text/javascript' src='../js/swiper.jquery.min.js' charset='utf-8'></script>     
+	<!--Initialize Swiper-->
+      <script>
+	 /*    var swiper = new Swiper('.swiper-container', {
+	        pagination: '.swiper-pagination',
+	        effect: 'cube',
+	        grabCursor: true,
+	        cube: {
+	            shadow: true,
+	            slideShadows: true,
+	            shadowOffset: 20,
+	            shadowScale: 0.94
+	        }    
+	    });  */   
+    </script> 
+    <script type='text/javascript' src='../js/address.js' charset='utf-8'></script>           
+    <script type='text/javascript' src='../js/productDetail.js' charset='utf-8'></script>           
+</body>
+
+</html>

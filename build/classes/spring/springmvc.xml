@@ -1,0 +1,77 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:aop="http://www.springframework.org/schema/aop" xmlns:tx="http://www.springframework.org/schema/tx"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+		http://www.springframework.org/schema/beans/spring-beans-3.2.xsd 
+		http://www.springframework.org/schema/mvc 
+		http://www.springframework.org/schema/mvc/spring-mvc-3.2.xsd 
+		http://www.springframework.org/schema/context 
+		http://www.springframework.org/schema/context/spring-context-3.2.xsd 
+		http://www.springframework.org/schema/aop 
+		http://www.springframework.org/schema/aop/spring-aop-3.2.xsd 
+		http://www.springframework.org/schema/tx 
+		http://www.springframework.org/schema/tx/spring-tx-3.2.xsd ">
+
+	<!-- 使用spring组件扫描 -->
+	<context:component-scan base-package="cn.school.buy.controller" />
+	
+	<!-- 开启aop，对类代理 -->
+	<!-- <aop:config proxy-target-class="true"></aop:config> -->
+	<!-- 开启shiro注解支持 -->
+	<!-- <bean
+		class="
+org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor">
+		<property name="securityManager" ref="securityManager" />
+	</bean> -->
+	
+
+	
+	<!-- 通过annotation-driven可以替代下边的处理器映射器和适配器 -->
+	<mvc:annotation-driven>
+	    <mvc:message-converters>
+	        <bean class="org.springframework.http.converter.json.MappingJacksonHttpMessageConverter">
+	             <!-- <property name="supportedMediaTypes">  
+                    <list>  
+                        <value>text/html;charset=UTF-8</value>  
+                    </list>  
+                </property> -->  
+               <property name="supportedMediaTypes">
+			<list>
+				<value>text/html;charset=UTF-8</value>
+				<value>application/json;charset=utf-8</value>
+<!-- 				<value>application/x-www-form-urlencoded</value> -->      
+			</list>
+		</property> 
+	        </bean>
+	    </mvc:message-converters>
+	</mvc:annotation-driven>
+
+	<!-- 配置视图解析器 要求将jstl的包加到classpath -->
+	<!-- ViewResolver -->
+	<bean
+		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+		<property name="prefix" value="/webapp/page/" />
+		<!-- <property name="suffix" value=".html" /> -->   
+	</bean>  
+	<!-- 文件上传 -->
+	<bean id="multipartResolver"
+		class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+		<!-- 设置上传文件的最大尺寸为5MB -->
+		<property name="maxUploadSize">
+			<value>9242880</value>
+		</property>
+	</bean> 
+	<!--- StringHttpMessageConverter bean -->
+
+<!-- <bean id = "stringHttpMessageConverter" class ="org.springframework.http.converter.StringHttpMessageConverter"/> -->
+<!-- 启动Spring MVC的注解功能，完成请求和注解POJO的映射 -->
+<!-- <bean class ="org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter" >
+       <property name= "messageConverters" >
+             <list>
+                 新增的StringMessageConverter bean
+                 <ref bean= "stringHttpMessageConverter" />      
+             </list>
+        </property>
+</bean> -->   
+</beans>
