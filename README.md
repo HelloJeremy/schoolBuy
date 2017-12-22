@@ -44,7 +44,7 @@ es5 + Light7 + Spirng + SpringMVC + Mybatis + MySQL + Andriod
 ![enter image description here](https://github.com/HelloJeremy/schoolBuy/blob/e03ac5a04cc4c41fe6a3fa7030beecda2e3598d1/image/upload_manage.gif?raw=true)
 
 ## WebAPP发布
-将web项目发布到Linux服务器上我又一个专门的仓库记录了发布过程,这里不过概述，有兴趣的同学可以[前往](https://github.com/HelloJeremy/Ubuntu-Java/blob/master/%E5%9C%A8Ubuntu%E4%B8%8A%E6%90%AD%E5%BB%BAJava%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83.md)。
+将web项目发布到Linux服务器上我有一个专门的仓库记录了发布过程,这里不过概述，有兴趣的同学可以[前往](https://github.com/HelloJeremy/Ubuntu-Java/blob/master/%E5%9C%A8Ubuntu%E4%B8%8A%E6%90%AD%E5%BB%BAJava%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83.md)。
 ## 总结
 - 1 这个APP功能简单到扣脚，属于菜鸟级中菜鸟水平
 - 2  而且技术栈属于比较落后的技术
