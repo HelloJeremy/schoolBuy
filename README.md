@@ -6,11 +6,14 @@
 **注** ：该代码只能做为参考，如果有人做类似方向的项目，一定要处理好图片的上传。
 
 
-##技术栈
+
+
+## 技术栈
+
 es5 + Light7 + Spirng + SpringMVC + Mybatis + MySQL + Andriod
 
 
-##项目运行
+## 项目运行
 - 将项目部署到Tomcat7上
 - 通过Android代码将SchoolBuy webApp打包成APK
 - 在安卓手机上安装SchoolBuy APP
@@ -18,31 +21,31 @@ es5 + Light7 + Spirng + SpringMVC + Mybatis + MySQL + Andriod
 **注意** ： 要在Mysql中创建对应的数据库和表
 
 
-##效果演示
+## 效果演示
 因为穷，租不起服务器，贫穷限制了在线演示。将就看下方的演示截图吧。
 
 
-###SchoolBuy APP功能
+### SchoolBuy APP功能
 ![enter image description here](https://github.com/HelloJeremy/schoolBuy/blob/master/image/app.png?raw=true)
 
 
-##演示截图
+## 演示截图
 
 
-###游客预览二手商品
+### 游客预览二手商品
 ![enter image description here](https://github.com/HelloJeremy/schoolBuy/blob/e03ac5a04cc4c41fe6a3fa7030beecda2e3598d1/image/product_show.gif?raw=true)
 
 
-###二手卖家注册登录（含找回密码）及下架商品
+### 二手卖家注册登录（含找回密码）及下架商品
 ![enter image description here](https://github.com/HelloJeremy/schoolBuy/blob/e03ac5a04cc4c41fe6a3fa7030beecda2e3598d1/image/regist_login.gif?raw=true)
 
 
-###二手卖家发布商品、修改商品参数及修改个人头像
+### 二手卖家发布商品、修改商品参数及修改个人头像
 ![enter image description here](https://github.com/HelloJeremy/schoolBuy/blob/e03ac5a04cc4c41fe6a3fa7030beecda2e3598d1/image/upload_manage.gif?raw=true)
 
 
 
-###License
+### License
 [Unlicense](https://github.com/HelloJeremy/schoolBuy/blob/master/LICENSE)
 
 
